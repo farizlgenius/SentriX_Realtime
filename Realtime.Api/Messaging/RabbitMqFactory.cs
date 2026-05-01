@@ -6,10 +6,6 @@ using Realtime.Api.Interfaces;
 
 namespace Realtime.Api.Messaging;
 
-public interface IRabbitMqFactory : IDisposable
-{
-      Task<IConnection> GetConnectionAsync(CancellationToken cancellationToken = default);
-}
 
 public sealed class RabbitMqFactory : IRabbitMqFactory
 {
